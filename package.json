@@ -1,0 +1,11 @@
+{
+  "name": "exemplo-projeto-ci-cd",
+  "version": "1.0.0",
+  "description": "Aplicação de exemplo mínima para o experimento da Sprint 5 (N=1)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "build": "mkdir -p dist && cp index.js dist/index.js && echo 'build concluído'"
+  },
+  "license": "MIT"
+}
