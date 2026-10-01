@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node --test",
-    "build": "mkdir -p dist && cp index.js dist/index.js && echo 'build concluído'"
+    "build": "node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});fs.copyFileSync('index.js','dist/index.js');console.log('build concluído')\""
   },
   "license": "MIT"
 }
